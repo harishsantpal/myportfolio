@@ -1,0 +1,122 @@
+#experience {
+  position: relative; /* Set position to relative for absolute positioning of pseudo-element */
+  overflow: hidden;
+  padding: 50px 20px;
+  margin-top: 20px;
+  background-image: url("/public/imgs/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+#experience .heading {
+  text-align: center;
+  color: #ee9a00;
+  background-color: transparent;
+}
+
+.experience-content {
+  margin: 0 auto;
+  width: 100%;
+  background-color: transparent;
+}
+
+.experience-content h2{
+  font-size: 3.5rem;
+  background-color: transparent;
+}
+
+.job {
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.text-highlight{
+  color: #ee9a00;
+  background-color: transparent;
+}
+
+.job h3 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  margin-top: -35px;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.job h4 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: -10px;
+  background-color: transparent;
+}
+
+.job p {
+  font-size: 34px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.job ul {
+  list-style-type: circle;
+  margin-left: 20px;
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+.job ul li {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+  margin-inline-start: 2rem;
+  color: #fff;
+  background-color: transparent;
+}
+
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .job h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .job p {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+  }
+  
+  .job ul {
+    margin-top: 10px;
+  }
+  
+  .job ul li {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+
+
+
+

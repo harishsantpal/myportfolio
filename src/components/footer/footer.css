@@ -1,0 +1,110 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav ul li button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-nav ul li button:hover {
+  color: #000;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.footer-nav li {
+  margin: 0 10px;
+  background-color: transparent;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  background-color: transparent;
+}
+
+.footer-nav a:hover {
+  color: #ddd;
+}
+
+.footer-contact {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  justify-content: center;
+  background-color: transparent;
+}
+
+.contact-item {
+  margin: 10px; /* Add margin to separate contact items */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.contact-item .icon {
+  font-size: 25px;
+  background-color: transparent;
+}
+
+.back{
+  background-color: transparent;
+}
+
+.contact-item p {
+  margin: 0 0 0 5px;
+  font-size: 20px;
+  background-color: #333;
+}
+
+.footer-info {
+  margin-top: 20px;
+  text-align: center; /* Center text in the footer info */
+  background-color: transparent;
+}
+
+.footer-info p {
+  background-color: transparent;
+}
+.footer-info span {
+  background-color: transparent;
+  color: #ee9a00;
+  font-weight: 800;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .footer-nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center navigation items horizontally */
+  }
+
+  .footer-nav li {
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .contact-item {
+    margin: 10px auto; /* Center contact items */
+  }
+}

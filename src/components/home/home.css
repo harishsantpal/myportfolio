@@ -1,0 +1,140 @@
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: url('/public/imgs/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
+
+.home-content {
+  text-align: center;
+  background-color: transparent;
+}
+
+.container {
+  background-color: transparent;
+}
+
+.resumedownload {
+  background-color: transparent;
+  align-items: center;
+  text-align: center;
+}
+
+.download-button {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background-color: #1c86ee;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.download-button:hover {
+  background-color: #ee9a00;
+  color: #fff;
+}
+
+.img-container {
+  align-items: center;
+  background-color: transparent;
+}
+
+.imagedata {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 5px solid #ee9a00;
+  background-color: transparent;
+}
+
+.home-content h1 {
+  font-size: 4.5em;
+  margin-bottom: 10px;
+  color: #ee9a00;
+  font-weight: 900;
+  background-color: transparent;
+}
+
+.home-content p {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 800;
+  background-color: transparent;
+}
+
+.home-content button {
+  padding: 10px 20px;
+  font-size: 2em;
+  background-color: #ee9a00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-content button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-content h1 {
+    font-size: 2.5em;
+  }
+
+  .home-content p {
+    font-size: 1.4em;
+  }
+
+  .home-content button {
+    font-size: 1em;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .img-container {
+    margin-top: -560px;
+  }
+
+
+  .imagedata {
+    height: 280px;
+    width: 280px;
+
+  }
+
+
+  .download-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #1c86ee;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+
+}

@@ -1,0 +1,136 @@
+#education {
+  padding: 50px 20px;
+  background-color: blanchedalmond;
+  margin-top: 20px;
+}
+
+#education h2 {
+  text-align: center;
+  font-size: 50px;
+  background-color: transparent;
+}
+
+.education-container {
+  position: relative;
+  display: flex; 
+  justify-content: space-between; 
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: transparent;
+  
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%; 
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #000;
+}
+
+.education-row {
+  flex: 1; 
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+.left-education, .right-education {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.left-education {
+  align-items: center; 
+  margin-bottom: 50px;
+}
+
+.right-education {
+  align-items: start; 
+  margin-top: 130px;
+}
+
+.education-card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ee9a00;
+  width: 750px;
+}
+
+.education-card h1 {
+  margin-top: 0;
+  background-color: transparent;
+  font-size: 30px;
+}
+.education-card h3 {
+  margin-top: 0;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.education-card p {
+  margin: 5px 0;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .vertical-line {
+    display: none; 
+  }
+
+  .education-row {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 55px;
+    align-items: center;
+  }
+
+  
+.left-education {
+  align-items: center; /* Align items to the end */
+  margin-bottom: -5px;
+  margin-left: 50px;
+}
+
+.right-education {
+  align-items: center; /* Align items to the start */
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+  
+.education-card h1 {
+  margin-top: 0;
+  background-color: transparent;
+  font-size: 20px;
+}
+.education-card h3 {
+  margin-top: 0;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.education-card p {
+ 
+  font-size: 15px;
+}
+
+.education-card {
+  width: 600px;
+}
+
+}

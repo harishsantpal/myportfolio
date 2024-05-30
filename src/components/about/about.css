@@ -1,0 +1,71 @@
+#about {
+  position: relative; /* Set position to relative for absolute positioning of pseudo-element */
+  overflow: hidden; /* Hide overflow to ensure the pseudo-element does not extend beyond the section */
+  background-image: url("/public/imgs/about-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  ;
+}
+
+#about::before {
+  content: ''; /* Add content to the pseudo-element */
+  position: absolute; /* Set position to absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Set background color with opacity */
+}
+
+.about-content {
+  position: relative; /* Set position to relative to keep it above the pseudo-element */
+  z-index: 1; /* Ensure content appears above the pseudo-element */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  color: white;
+  text-align: justify;
+  background-color: transparent
+}
+
+.about-content .text-higlit{
+  color: #ee9a00;
+  font-weight: 700;
+  background-color: transparent
+}
+
+.about-content h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  background-color: transparent
+}
+
+.about-content p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  background-color: transparent
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 30px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-content h2 {
+    font-size: 2em; /* Decrease font size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 1.2em; /* Decrease font size for smaller screens */
+  }
+}

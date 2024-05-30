@@ -1,0 +1,74 @@
+#skills {
+    padding: 50px 20px;
+    background-color: #ee9a00;
+    margin-top: 20px;
+    background-image: url('/public/imgs/bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  #skills h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  .skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .skill-card {
+    position: relative;
+    margin: 10px;
+    width: calc(20% - 20px); /* Adjust card width for 4 cards in a row */
+    height: 160px; /* Adjust card height as needed */
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  
+  .skill-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .skill-card:hover img {
+    opacity: 0.5; /* Adjust opacity for the glass effect */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity for the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .skill-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay p {
+    color: #ee9a00;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    background-color: transparent;
+  }
+  
